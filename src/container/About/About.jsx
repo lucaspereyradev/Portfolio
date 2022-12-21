@@ -7,22 +7,22 @@ const abouts = [
     {
         title: 'Inspiración',
         description: 'Cada proyecto es un mundo nuevo.',
-        imageUrl: '/about01.png',
+        imageUrl: './about01.png',
     },
     {
         title: 'Desarrollo inteligente',
         description: 'Proyectos eficaces e intuitivos.',
-        imageUrl: '/about03.png',
+        imageUrl: './about03.png',
     },
     {
         title: 'Diseño agradable',
         description: 'Lo agradable genera un ambiente distinto.',
-        imageUrl: '/about04.png',
+        imageUrl: './about04.png',
     },
     {
         title: 'Desarrollo Full Stack',
         description: 'Cada tecnologia es importante.',
-        imageUrl: '/about02.png',
+        imageUrl: './about02.png',
     },
 ];
 

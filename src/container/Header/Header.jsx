@@ -51,16 +51,16 @@ const Header = () => {
                                     <ul className="rounded-sm text-left text-CustomBlack">
                                         <li className="border-b px-5 py-2">
                                             <a
-                                                href="/cv-lucaspereyra-español.pdf"
-                                                download="/cv-lucaspereyra-español.pdf"
+                                                href="./cv-lucaspereyra-español.pdf"
+                                                download="./cv-lucaspereyra-español.pdf"
                                             >
                                                 Español
                                             </a>
                                         </li>
                                         <li className="px-5 py-2">
                                             <a
-                                                href="/cv-lucaspereyra-english.pdf"
-                                                download="/cv-lucaspereyra-english.pdf"
+                                                href="./cv-lucaspereyra-english.pdf"
+                                                download="./cv-lucaspereyra-english.pdf"
                                             >
                                                 Inglés
                                             </a>
