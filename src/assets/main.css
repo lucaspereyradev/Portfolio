@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-slate-200 font-[Prompt];
+    }
+}
+
+@layer components {
+    .app__container {
+        @apply container m-auto mt-16 flex-1 flex-col;
+    }
+
+    .head-text {
+        @apply text-center text-3xl font-semibold md:text-[2rem];
+    }
+
+    .app__skills {
+        @apply w-full flex-1 flex-col;
+    }
+
+    .app__works {
+        @apply w-full flex-1 flex-col;
+    }
+
+    .app__social-buttons {
+        @apply mx-1 my-0 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-[50%] bg-emerald-500 text-white shadow-md transition-all hover:bg-emerald-700;
+    }
+}
