@@ -100,7 +100,7 @@ const Navbar = () => {
                         ))}
                     </ul>
 
-                    <div className="mt-[300px] flex h-full w-full items-center justify-center gap-8">
+                    <div className="mt-[150px] flex h-full w-full items-center justify-center gap-8">
                         <a
                             href="https://github.com/lucaspereyradev"
                             target="_blank"
