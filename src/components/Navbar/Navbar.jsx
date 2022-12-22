@@ -31,7 +31,7 @@ const Navbar = () => {
                         <div>
                             <a
                                 className="flex items-center text-2xl font-bold leading-none"
-                                href="/"
+                                href="#Inicio"
                             >
                                 <span className="text-emerald-400">{logoLeft} </span>
                                 <span
@@ -88,7 +88,7 @@ const Navbar = () => {
                         </button>
                     </div>
                     <ul className="m-0 mt-4 flex h-full w-full list-none flex-col items-start justify-start px-4">
-                        {['Inicio', 'Sobre mí', 'Proyectos', 'Contacto'].map((text) => (
+                        {['Inicio', 'Sobre mí', 'Proyectos', 'Skills', 'Contacto'].map((text) => (
                             <li
                                 key={text}
                                 className="m-4 text-xl font-medium uppercase transition-colors hover:text-emerald-400"
@@ -100,7 +100,7 @@ const Navbar = () => {
                         ))}
                     </ul>
 
-                    <div className="mt-[400px] flex h-full w-full items-center justify-center gap-8">
+                    <div className="mt-[300px] flex h-full w-full items-center justify-center gap-8">
                         <a
                             href="https://github.com/lucaspereyradev"
                             target="_blank"
