@@ -19,9 +19,8 @@ const works = [
         description: 'E-commerce de dispositivos electronicos.',
         imageUrl: './logo-tutienda.png',
         tags: ['Frontend', 'Backend'],
-        projectLinkDemo: '',
-        projectLinkGithub:
-            'https://github.com/lucaspereyradev/Dev-Place-Bootcamp-FSJS/tree/main/Proyecto-Integrador/Version%201%20Migraci%C3%B3n',
+        projectLinkDemo: 'https://ecommerce-tutienda.web.app/',
+        projectLinkGithub: 'https://github.com/lucaspereyradev/E-commerce-tutienda',
     },
     {
         title: 'CryptoWallet',
