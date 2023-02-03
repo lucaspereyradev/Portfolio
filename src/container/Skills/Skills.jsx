@@ -48,7 +48,7 @@ const skills = [
         image: <BootstrapIcon />,
     },
     {
-        name: 'Tailwind',
+        name: 'TailwindCSS',
         image: <TailwindIcon />,
     },
 ];
@@ -59,12 +59,14 @@ const formation = [
         place: 'Dev Place',
         description: 'Estudie y creé proyectos Full Stack',
         year: 'Oct. 2022 - Feb. 2023',
+        link: 'https://www.devplace.com.ar/',
     },
     {
         name: 'Técnico Informatico personal y profesional',
         place: 'Escuela de Educación Secundaria Técnica n°5 "Amancio Williams"',
         description: 'Adquiri conocimientos de programación, sistemas, redes y más.',
         year: 'Mar. 2015 - Feb. 2022',
+        link: 'https://cutt.ly/o91aLxz',
     },
 ];
 
@@ -109,9 +111,13 @@ const Skills = () => {
                                         data-for={item.name}
                                     >
                                         <h4 className="font-bold">{item.name}</h4>
-                                        <p className="mt-[5px] font-light text-gray-500">
+                                        <a
+                                            href={item.link}
+                                            target="_blank"
+                                            className="mt-[5px] font-light text-gray-500"
+                                        >
                                             {item.place}
-                                        </p>
+                                        </a>
                                     </motion.div>
                                 </motion.div>
                             </motion.div>

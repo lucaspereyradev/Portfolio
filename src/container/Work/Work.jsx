@@ -6,7 +6,7 @@ import { EyeIcon, GitHubIcon } from '../../components';
 const works = [
     {
         title: 'Portfolio',
-        technologies: ['React', 'Tailwind'],
+        technologies: ['React', 'TailwindCSS'],
         description: 'Portafolio personal',
         imageUrl: './project-portfolio.png',
         tags: ['Frontend'],
@@ -14,8 +14,17 @@ const works = [
         projectLinkGithub: 'https://github.com/lucaspereyradev/portfolio',
     },
     {
+        title: 'DevCoin',
+        technologies: ['React', 'TailwindCSS', 'Nodejs', 'MySQL'],
+        description: 'Exchange virtual de criptomonedas.',
+        imageUrl: './logo-devcoin.jpg',
+        tags: ['Frontend', 'Backend'],
+        projectLinkDemo: 'https://dev-coin.web.app/',
+        projectLinkGithub: 'https://github.com/lucaspereyradev/devCoin-front',
+    },
+    {
         title: 'E-commerce "TuTienda"',
-        technologies: ['React', 'Tailwind', 'Nodejs', 'MySQL'],
+        technologies: ['React', 'TailwindCSS', 'Nodejs', 'MySQL'],
         description: 'E-commerce de dispositivos electronicos.',
         imageUrl: './logo-tutienda.png',
         tags: ['Frontend', 'Backend'],
@@ -24,11 +33,12 @@ const works = [
     },
     {
         title: 'CryptoWallet',
-        technologies: ['React', 'Tailwind', 'Nodejs', 'MySQL'],
+        technologies: ['React', 'TailwindCSS', 'Nodejs', 'MySQL'],
         description: 'Billetera virtual de criptomonedas.',
         imageUrl: './logo-cryptowallet.png',
         tags: ['Frontend', 'Backend'],
-        projectLinkDemo: '',
+        projectLinkDemo:
+            'https://github.com/lucaspereyradev/Dev-Place-Bootcamp-FSJS/tree/main/Proyecto-Individual-CryptoWallet/client',
         projectLinkGithub:
             'https://github.com/lucaspereyradev/Dev-Place-Bootcamp-FSJS/tree/main/Proyecto-Individual-CryptoWallet/client',
     },
