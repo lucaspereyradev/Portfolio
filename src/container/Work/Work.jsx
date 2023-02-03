@@ -164,20 +164,22 @@ const Work = () => {
                             </h6>
 
                             <div className="mt-6 flex w-full items-center justify-center gap-2 md:hidden">
-                                <button className="w-full rounded-lg bg-emerald-400 px-4 py-1 text-white shadow-sm">
-                                    <a href={work.projectLinkDemo} target="_blank" rel="noreferrer">
-                                        Ver
-                                    </a>
-                                </button>
-                                <button className="w-full rounded-lg bg-emerald-400 px-4 py-1 text-white shadow-sm">
-                                    <a
-                                        href={work.projectLinkGithub}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Repositorio
-                                    </a>
-                                </button>
+                                <a
+                                    href={work.projectLinkDemo}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="w-full rounded-lg bg-emerald-400 px-4 py-1 text-center text-white shadow-sm"
+                                >
+                                    Ver
+                                </a>
+                                <a
+                                    href={work.projectLinkGithub}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="w-full rounded-lg bg-emerald-400 px-4 py-1 text-center text-white shadow-sm"
+                                >
+                                    Repositorio
+                                </a>
                             </div>
                         </div>
                     </div>

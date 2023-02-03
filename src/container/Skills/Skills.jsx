@@ -114,6 +114,7 @@ const Skills = () => {
                                         <a
                                             href={item.link}
                                             target="_blank"
+                                            rel="noreferrer"
                                             className="mt-[5px] font-light text-gray-500"
                                         >
                                             {item.place}
