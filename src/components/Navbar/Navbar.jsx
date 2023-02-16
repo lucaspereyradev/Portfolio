@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { BarsIcon, CloseIcon, GitHubIcon, InstagramIcon, LinkedInIcon } from '../';
 
-const Navbar = () => {
+const Navbar = ({ setLanguage }) => {
     const [toggle, setToggle] = useState(false);
     const [scroll, setScroll] = useState(false);
 
@@ -23,7 +23,7 @@ const Navbar = () => {
         <>
             {!toggle && (
                 <nav
-                    className={`fixed z-[2] w-full overflow-hidden bg-transparent px-4 py-5 backdrop-blur-sm ${
+                    className={`fixed z-20 w-full overflow-hidden bg-transparent px-4 py-5 backdrop-blur-sm ${
                         scroll ? 'text-black' : 'text-white'
                     }`}
                 >
@@ -45,12 +45,12 @@ const Navbar = () => {
                             </a>
                         </div>
 
-                        <ul className="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6">
+                        <ul className="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform gap-x-4 md:mx-auto md:flex md:w-auto md:items-center lg:gap-x-6">
                             {['Inicio', 'Sobre mí', 'Proyectos', 'Skills', 'Contacto'].map(
                                 (text) => (
                                     <li
                                         key={`link-${text}`}
-                                        className="transition-colors hover:text-emerald-400"
+                                        className="whitespace-nowrap transition-colors hover:text-emerald-400"
                                     >
                                         <div />
                                         <a href={`#${text}`}>{text}</a>
@@ -59,12 +59,39 @@ const Navbar = () => {
                             )}
                         </ul>
 
-                        <div className="relative flex items-center justify-center lg:hidden">
-                            {!toggle && (
-                                <button onClick={() => setToggle(true)}>
-                                    <BarsIcon color="#34D399" />
-                                </button>
-                            )}
+                        {!toggle && (
+                            <button
+                                className="relative flex items-center justify-center md:hidden"
+                                onClick={() => setToggle(true)}
+                            >
+                                <BarsIcon color="#34D399" />
+                            </button>
+                        )}
+                        <div className="hidden gap-x-2 md:flex">
+                            <button onClick={() => setLanguage('es')}>
+                                <img
+                                    src="/spain-flag.webp"
+                                    width={45}
+                                    className="h-full rounded-[4px]"
+                                    alt="Español"
+                                />
+                            </button>
+                            <button onClick={() => setLanguage('en')}>
+                                <img
+                                    src="/usa-flag.webp"
+                                    width={45}
+                                    className="h-full rounded-[4px]"
+                                    alt="Inglés"
+                                />
+                            </button>
+                            <button onClick={() => setLanguage('pt')}>
+                                <img
+                                    src="/brazil-flag.webp"
+                                    width={45}
+                                    className="h-full rounded-[4px]"
+                                    alt="Portugués"
+                                />
+                            </button>
                         </div>
                     </div>
                 </nav>
@@ -74,20 +101,22 @@ const Navbar = () => {
                 <motion.nav
                     whileInView={{ x: [200, 0] }}
                     transition={{ duration: 0.85, ease: 'easeOut' }}
-                    className="fixed top-0 bottom-0 right-0 z-10 flex h-screen w-[80%] flex-col items-end justify-end bg-white/90 text-CustomBlack shadow-md sm:w-[40%]"
+                    className="fixed top-0 bottom-0 right-0 z-20 flex h-screen w-[80%] flex-col items-end justify-end bg-white/90 text-CustomBlack shadow-md sm:w-[40%]"
                 >
-                    <div className="flex w-full justify-between px-4 pt-3">
+                    <div className="absolute top-0 left-0 px-4 pt-6">
                         <a className="flex items-center text-2xl font-bold leading-none" href="/">
                             <span className="text-emerald-400">{logoLeft} </span>
                             <span className="font-medium text-CustomBlack">lukedev</span>
                             <span className="text-emerald-400"> {logoRigth}</span>
                         </a>
-
-                        <button onClick={() => setToggle(false)} className="my-2 mx-6">
-                            <CloseIcon color="#34D399" />
-                        </button>
                     </div>
-                    <ul className="m-0 mt-4 flex h-full w-full list-none flex-col items-start justify-start px-4">
+                    <button
+                        className="absolute top-0 right-0 px-8 py-5"
+                        onClick={() => setToggle(false)}
+                    >
+                        <CloseIcon color="#34D399" />
+                    </button>
+                    <ul className="mt-[6rem] flex h-full w-full list-none flex-col items-start justify-start px-4">
                         {['Inicio', 'Sobre mí', 'Proyectos', 'Skills', 'Contacto'].map((text) => (
                             <li
                                 key={text}
@@ -100,7 +129,34 @@ const Navbar = () => {
                         ))}
                     </ul>
 
-                    <div className="mt-[150px] flex h-full w-full items-center justify-center gap-8">
+                    <div className="mt-[6rem] flex w-full justify-center gap-x-5">
+                        <button onClick={() => setLanguage('es')}>
+                            <img
+                                src="/spain-flag.webp"
+                                width={45}
+                                className="h-full rounded-[4px]"
+                                alt="Página en Español"
+                            />
+                        </button>
+                        <button onClick={() => setLanguage('en')}>
+                            <img
+                                src="/usa-flag.webp"
+                                width={45}
+                                className="h-full rounded-[4px]"
+                                alt="Página en Inglés"
+                            />
+                        </button>
+                        <button onClick={() => setLanguage('pt')}>
+                            <img
+                                src="/brazil-flag.webp"
+                                width={45}
+                                className="h-full rounded-[4px]"
+                                alt="Página en Portugués"
+                            />
+                        </button>
+                    </div>
+
+                    <div className="flex h-full w-full items-center justify-center gap-8">
                         <a
                             href="https://github.com/lucaspereyradev"
                             target="_blank"
