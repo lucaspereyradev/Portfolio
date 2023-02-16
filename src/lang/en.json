@@ -1,0 +1,15 @@
+{
+    "navbar": {
+        "redirect": "#Home",
+        "titles": ["Home", "About me", "Projects", "Skills", "Contact"],
+        "languages": {
+            "es": "Page in spanish",
+            "en": "Page in english",
+            "pt": "Page in portuguese"
+        }
+    },
+    "header": {
+        "redirect": "#Home",
+        "title": "Lucas Pereyra"
+    }
+}

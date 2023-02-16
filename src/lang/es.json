@@ -1,5 +1,15 @@
 {
     "navbar": {
-        "titles": ["Inicio", "Sobre mí", "Proyectos", "Skills", "Contacto"]
+        "redirect": "#Inicio",
+        "titles": ["Inicio", "Sobre mí", "Proyectos", "Skills", "Contacto"],
+        "languages": {
+            "es": "Página en español",
+            "en": "Página en inglés",
+            "pt": "Página en portugués"
+        }
+    },
+    "header": {
+        "redirect": "#Inicio",
+        "title": "Lucas Pereyra"
     }
 }
