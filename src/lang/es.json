@@ -19,10 +19,10 @@
     },
     "aboutme": {
         "titles": {
-            "text1": "Siempre los",
+            "text1": "Los",
             "text2": " Buenos desarrollos",
-            "text3": "Son",
-            "text4": " Buenos negocios"
+            "text3": "Siempre son",
+            "text4": " Rentables negocios."
         },
         "abouts": [
             {
@@ -37,12 +37,12 @@
             },
             {
                 "title": "Diseño agradable",
-                "description": "Lo agradable genera un ambiente distinto.",
+                "description": "Un diseño agradable mejora el ambiente y la productividad",
                 "imageUrl": "./about04.png"
             },
             {
                 "title": "Desarrollo Full Stack",
-                "description": "Cada tecnologia es importante.",
+                "description": "Cada tecnología ofrece soluciones únicas según las necesidades específicas.",
                 "imageUrl": "./about02.png"
             }
         ]
@@ -128,5 +128,6 @@
         },
         "btn": "Enviar",
         "autorText": "Hecho con ❤️ por Lucas Pereyra"
-    }
+    },
+    "linkLinkedin": "https://www.linkedin.com/in/lucaspereyradev/"
 }

@@ -16,5 +16,118 @@
         "textBtnDownload": "Download Resume",
         "textSpanish": "Spanish",
         "textEnglish": "English"
-    }
+    },
+    "aboutme": {
+        "titles": {
+            "text1": "The",
+            "text2": " Good developments",
+            "text3": "are always",
+            "text4": " Profitable businesses."
+        },
+        "abouts": [
+            {
+                "title": "Inspiration",
+                "description": "Each project is a new world.",
+                "imageUrl": "./about01.png"
+            },
+            {
+                "title": "Intelligent development",
+                "description": "Efficient and intuitive projects.",
+                "imageUrl": "./about03.png"
+            },
+            {
+                "title": "Pleasant design",
+                "description": "Pleasantness generates a different atmosphere.",
+                "imageUrl": "./about04.png"
+            },
+            {
+                "title": "Full Stack Development",
+                "description": "Each technology offers unique solutions according to specific needs.",
+                "imageUrl": "./about02.png"
+            }
+        ]
+    },
+    "work": {
+        "title": {
+            "text1": "My",
+            "text2": "Projects"
+        },
+        "btnTitles": ["All", "Frontend", "Backend"],
+        "works": [
+            {
+                "title": "Portfolio",
+                "technologies": ["React", "TailwindCSS"],
+                "description": "Personal Portfolio",
+                "imageUrl": "./project-portfolio.png",
+                "tags": ["Frontend"],
+                "projectLinkDemo": "https://lucaspereyradev.github.io/portfolio/",
+                "projectLinkGithub": "https://github.com/lucaspereyradev/portfolio"
+            },
+            {
+                "title": "DevCoin",
+                "technologies": ["React", "TailwindCSS", "Nodejs", "MySQL"],
+                "description": "Virtual cryptocurrency exchange.",
+                "imageUrl": "./logo-devcoin.jpg",
+                "tags": ["Frontend", "Backend"],
+                "projectLinkDemo": "https://dev-coin.web.app/",
+                "projectLinkGithub": "https://github.com/lucaspereyradev/devCoin-front"
+            },
+            {
+                "title": "E-commerce 'TuTienda'",
+                "technologies": ["React", "TailwindCSS", "Nodejs", "MySQL"],
+                "description": "E-commerce of electronic devices.",
+                "imageUrl": "./logo-tutienda.png",
+                "tags": ["Frontend", "Backend"],
+                "projectLinkDemo": "https://ecommerce-tutienda.web.app/",
+                "projectLinkGithub": "https://github.com/lucaspereyradev/E-commerce-tutienda"
+            },
+            {
+                "title": "CryptoWallet",
+                "technologies": ["React", "TailwindCSS", "Nodejs", "MySQL"],
+                "description": "Cryptocurrency virtual wallet.",
+                "imageUrl": "./logo-cryptowallet.png",
+                "tags": ["Frontend", "Backend"],
+                "projectLinkDemo": "https://github.com/lucaspereyradev/Dev-Place-Bootcamp-FSJS/tree/main/Proyecto-Individual-CryptoWallet/client",
+                "projectLinkGithub": "https://github.com/lucaspereyradev/Dev-Place-Bootcamp-FSJS/tree/main/Proyecto-Individual-CryptoWallet/client"
+            }
+        ],
+        "titlesBtnCards": {
+            "text1": "View",
+            "text2": "Repository"
+        }
+    },
+    "skills": {
+        "title": {
+            "text1": "My",
+            "text2": "Skills",
+            "text3": "and",
+            "text4": "Formation"
+        },
+        "formation": [
+            {
+                "name": "Full Stack Bootcamp in Javascript",
+                "place": "Dev Place",
+                "description": "Study and create Full Stack projects",
+                "year": "Oct. 2022 - Feb. 2023",
+                "link": "https://www.devplace.com.ar/"
+            },
+            {
+                "name": "Computer Technician",
+                "place": "Escuela de Educación Secundaria Técnica n°5 'Amancio Williams'",
+                "description": "I acquired knowledge of programming, systems, networks and more.",
+                "year": "Mar. 2015 - Feb. 2022",
+                "link": "https://cutt.ly/o91aLxz"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Let's talk!",
+        "input": {
+            "namePlaceholder": "Name",
+            "descriptionPlaceholder": "Description"
+        },
+        "btn": "Send",
+        "autorText": "Made with ❤️ by Lucas Pereyra"
+    },
+    "linkLinkedin": "https://www.linkedin.com/in/lucaspereyradev/?locale=en_US"
 }
