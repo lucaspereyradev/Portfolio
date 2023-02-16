@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion';
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { BarsIcon, CloseIcon, GitHubIcon, InstagramIcon, LinkedInIcon } from '../';
+import { LangContext } from '../../App';
 
 const Navbar = ({ setLanguage }) => {
+    const langContext = useContext(LangContext);
     const [toggle, setToggle] = useState(false);
     const [scroll, setScroll] = useState(false);
+
+    const lang = langContext.navbar;
 
     const logoLeft = '<';
     const logoRigth = '/>';
@@ -17,7 +21,13 @@ const Navbar = ({ setLanguage }) => {
         }
     };
 
-    window.addEventListener('scroll', onScroll);
+    useEffect(() => {
+        window.addEventListener('scroll', onScroll);
+
+        return () => {
+            window.removeEventListener('scroll', onScroll);
+        };
+    }, []);
 
     return (
         <>
@@ -31,7 +41,7 @@ const Navbar = ({ setLanguage }) => {
                         <div>
                             <a
                                 className="flex items-center text-2xl font-bold leading-none"
-                                href="#Inicio"
+                                href={lang.redirect}
                             >
                                 <span className="text-emerald-400">{logoLeft} </span>
                                 <span
@@ -46,17 +56,15 @@ const Navbar = ({ setLanguage }) => {
                         </div>
 
                         <ul className="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform gap-x-4 md:mx-auto md:flex md:w-auto md:items-center lg:gap-x-6">
-                            {['Inicio', 'Sobre mí', 'Proyectos', 'Skills', 'Contacto'].map(
-                                (text) => (
-                                    <li
-                                        key={`link-${text}`}
-                                        className="whitespace-nowrap transition-colors hover:text-emerald-400"
-                                    >
-                                        <div />
-                                        <a href={`#${text}`}>{text}</a>
-                                    </li>
-                                )
-                            )}
+                            {lang.titles.map((text) => (
+                                <li
+                                    key={`link-${text}`}
+                                    className="whitespace-nowrap transition-colors hover:text-emerald-400"
+                                >
+                                    <div />
+                                    <a href={`#${text}`}>{text}</a>
+                                </li>
+                            ))}
                         </ul>
 
                         {!toggle && (
@@ -73,7 +81,8 @@ const Navbar = ({ setLanguage }) => {
                                     src="/spain-flag.webp"
                                     width={45}
                                     className="h-full rounded-[4px]"
-                                    alt="Español"
+                                    alt={lang.languages.es}
+                                    title={lang.languages.es}
                                 />
                             </button>
                             <button onClick={() => setLanguage('en')}>
@@ -81,7 +90,8 @@ const Navbar = ({ setLanguage }) => {
                                     src="/usa-flag.webp"
                                     width={45}
                                     className="h-full rounded-[4px]"
-                                    alt="Inglés"
+                                    alt={lang.languages.en}
+                                    title={lang.languages.en}
                                 />
                             </button>
                             <button onClick={() => setLanguage('pt')}>
@@ -89,7 +99,8 @@ const Navbar = ({ setLanguage }) => {
                                     src="/brazil-flag.webp"
                                     width={45}
                                     className="h-full rounded-[4px]"
-                                    alt="Portugués"
+                                    alt={lang.languages.pt}
+                                    title={lang.languages.pt}
                                 />
                             </button>
                         </div>
@@ -117,7 +128,7 @@ const Navbar = ({ setLanguage }) => {
                         <CloseIcon color="#34D399" />
                     </button>
                     <ul className="mt-[6rem] flex h-full w-full list-none flex-col items-start justify-start px-4">
-                        {['Inicio', 'Sobre mí', 'Proyectos', 'Skills', 'Contacto'].map((text) => (
+                        {lang.titles.map((text) => (
                             <li
                                 key={text}
                                 className="m-4 text-xl font-medium uppercase transition-colors hover:text-emerald-400"
@@ -135,7 +146,8 @@ const Navbar = ({ setLanguage }) => {
                                 src="/spain-flag.webp"
                                 width={45}
                                 className="h-full rounded-[4px]"
-                                alt="Página en Español"
+                                alt={lang.languages.es}
+                                title={lang.languages.es}
                             />
                         </button>
                         <button onClick={() => setLanguage('en')}>
@@ -143,7 +155,8 @@ const Navbar = ({ setLanguage }) => {
                                 src="/usa-flag.webp"
                                 width={45}
                                 className="h-full rounded-[4px]"
-                                alt="Página en Inglés"
+                                alt={lang.languages.en}
+                                title={lang.languages.en}
                             />
                         </button>
                         <button onClick={() => setLanguage('pt')}>
@@ -151,7 +164,8 @@ const Navbar = ({ setLanguage }) => {
                                 src="/brazil-flag.webp"
                                 width={45}
                                 className="h-full rounded-[4px]"
-                                alt="Página en Portugués"
+                                alt={lang.languages.pt}
+                                title={lang.languages.pt}
                             />
                         </button>
                     </div>
