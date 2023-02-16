@@ -1,9 +1,12 @@
+import { useContext } from 'react';
 import HeroVideo from '../../assets/videos/hero.mp4';
 import Typewriter from 'typewriter-effect';
-
+import { LangContext } from '../../App';
 import { AppWrap } from '../../wrapper';
 
-const Header = () => {
+const Header = (props) => {
+    const lang = props.lang.header;
+
     const handleDropdown = () => {
         const dropdown = document.getElementById('dropdown');
         dropdown.classList.toggle('hidden');
@@ -76,4 +79,4 @@ const Header = () => {
     );
 };
 
-export default AppWrap(Header, 'Inicio', '', 'absolute h-full');
+export default AppWrap(Header, lang.header.redirect, '', 'absolute h-full');
