@@ -13,7 +13,9 @@ export default function App() {
     useEffect(() => {
         const langJSON = async () => {
             try {
-                const response = await axios.get(`./src/lang/${language}.json`);
+                const response = await axios.get(
+                    `https://raw.githubusercontent.com/lucaspereyradev/portfolio/main/src/lang/${language}.json`
+                );
                 setTexts(response.data);
             } catch (error) {
                 console.error(error);
