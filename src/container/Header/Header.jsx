@@ -8,7 +8,6 @@ const Header = () => {
     const langContext = useContext(LangContext);
     const lang = langContext.header;
 
-    console.log(lang);
     const handleDropdown = () => {
         const dropdown = document.getElementById('dropdown');
         dropdown.classList.toggle('hidden');
