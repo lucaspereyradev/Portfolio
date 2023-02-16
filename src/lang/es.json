@@ -119,5 +119,14 @@
                 "link": "https://cutt.ly/o91aLxz"
             }
         ]
+    },
+    "contact": {
+        "title": "¡Hablemos!",
+        "input": {
+            "namePlaceholder": "Nombre",
+            "descriptionPlaceholder": "Descripción"
+        },
+        "btn": "Enviar",
+        "autorText": "Hecho con ❤️ por Lucas Pereyra"
     }
 }
