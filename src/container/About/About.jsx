@@ -1,40 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
-
+import { LangContext } from '../../App';
 import { AppWrap, MotionWrap } from '../../wrapper';
 
-const abouts = [
-    {
-        title: 'Inspiración',
-        description: 'Cada proyecto es un mundo nuevo.',
-        imageUrl: './about01.png',
-    },
-    {
-        title: 'Desarrollo inteligente',
-        description: 'Proyectos eficaces e intuitivos.',
-        imageUrl: './about03.png',
-    },
-    {
-        title: 'Diseño agradable',
-        description: 'Lo agradable genera un ambiente distinto.',
-        imageUrl: './about04.png',
-    },
-    {
-        title: 'Desarrollo Full Stack',
-        description: 'Cada tecnologia es importante.',
-        imageUrl: './about02.png',
-    },
-];
-
 const About = () => {
+    const langContext = useContext(LangContext);
+    const lang = langContext.aboutme;
+    console.log(lang);
+
+    const titles = lang.titles;
+    const abouts = lang.abouts;
+
     return (
         <div className="app__container max-lg:mt-[100px] md:mb-12">
             <h2 className="head-text max-xsm:px-4">
-                Siempre los
-                <span className="text-emerald-500"> Buenos Desarrollos</span>
+                {titles.text1}
+                <span className="text-emerald-500"> {titles.text2}</span>
                 <br />
-                Son
-                <span className="text-emerald-500"> Buenos Negocios</span>
+                {titles.text3}
+                <span className="text-emerald-500"> {titles.text4}</span>
             </h2>
 
             <div className="mt-8 grid grid-cols-1 justify-items-center max-1xsm:px-2 1xsm:grid-cols-2 1xsm:gap-x-8 xsm:gap-x-0 lg:grid-cols-3 xl:grid-cols-4">
