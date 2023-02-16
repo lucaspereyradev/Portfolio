@@ -1,51 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { LangContext } from '../../App';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { EyeIcon, GitHubIcon } from '../../components';
 
-const works = [
-    {
-        title: 'Portfolio',
-        technologies: ['React', 'TailwindCSS'],
-        description: 'Portafolio personal',
-        imageUrl: './project-portfolio.png',
-        tags: ['Frontend'],
-        projectLinkDemo: 'https://lucaspereyradev.github.io/portfolio/',
-        projectLinkGithub: 'https://github.com/lucaspereyradev/portfolio',
-    },
-    {
-        title: 'DevCoin',
-        technologies: ['React', 'TailwindCSS', 'Nodejs', 'MySQL'],
-        description: 'Exchange virtual de criptomonedas.',
-        imageUrl: './logo-devcoin.jpg',
-        tags: ['Frontend', 'Backend'],
-        projectLinkDemo: 'https://dev-coin.web.app/',
-        projectLinkGithub: 'https://github.com/lucaspereyradev/devCoin-front',
-    },
-    {
-        title: 'E-commerce "TuTienda"',
-        technologies: ['React', 'TailwindCSS', 'Nodejs', 'MySQL'],
-        description: 'E-commerce de dispositivos electronicos.',
-        imageUrl: './logo-tutienda.png',
-        tags: ['Frontend', 'Backend'],
-        projectLinkDemo: 'https://ecommerce-tutienda.web.app/',
-        projectLinkGithub: 'https://github.com/lucaspereyradev/E-commerce-tutienda',
-    },
-    {
-        title: 'CryptoWallet',
-        technologies: ['React', 'TailwindCSS', 'Nodejs', 'MySQL'],
-        description: 'Billetera virtual de criptomonedas.',
-        imageUrl: './logo-cryptowallet.png',
-        tags: ['Frontend', 'Backend'],
-        projectLinkDemo:
-            'https://github.com/lucaspereyradev/Dev-Place-Bootcamp-FSJS/tree/main/Proyecto-Individual-CryptoWallet/client',
-        projectLinkGithub:
-            'https://github.com/lucaspereyradev/Dev-Place-Bootcamp-FSJS/tree/main/Proyecto-Individual-CryptoWallet/client',
-    },
-];
-
 const Work = () => {
-    const [activeFilter, setActiveFilter] = useState('Todos');
+    const langContext = useContext(LangContext);
+    const lang = langContext.work;
+
+    const title = lang.title;
+    const btnTitles = lang.btnTitles;
+    const works = lang.works;
+    const titlesBtnCards = lang.titlesBtnCards;
+
+    const [activeFilter, setActiveFilter] = useState(btnTitles[0]);
     const [filterWork, setFilterWork] = useState(works);
     const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
@@ -55,7 +23,7 @@ const Work = () => {
 
         setTimeout(() => {
             setAnimateCard([{ y: 0, opacity: 1 }]);
-            if (item === 'Todos') {
+            if (item === btnTitles[0]) {
                 setFilterWork(works);
             } else {
                 setFilterWork(works.filter((work) => work.tags.includes(item)));
@@ -66,11 +34,11 @@ const Work = () => {
     return (
         <div className="app__container">
             <h2 className="head-text">
-                Mis <span className="text-emerald-400">Proyectos</span>
+                {title.text1} <span className="text-emerald-400">{title.text2}</span>
             </h2>
 
             <div className="mt-16 flex flex-row flex-wrap items-center justify-center">
-                {['Todos', 'Frontend', 'Backend'].map((item, index) => (
+                {btnTitles.map((item, index) => (
                     <div
                         key={index}
                         onClick={() => handleWorkFilter(item)}
@@ -170,7 +138,7 @@ const Work = () => {
                                     rel="noreferrer"
                                     className="w-full rounded-lg bg-emerald-400 px-4 py-1 text-center text-white shadow-sm"
                                 >
-                                    Ver
+                                    {titlesBtnCards.text1}
                                 </a>
                                 <a
                                     href={work.projectLinkGithub}
@@ -178,7 +146,7 @@ const Work = () => {
                                     rel="noreferrer"
                                     className="w-full rounded-lg bg-emerald-400 px-4 py-1 text-center text-white shadow-sm"
                                 >
-                                    Repositorio
+                                    {titlesBtnCards.text2}
                                 </a>
                             </div>
                         </div>
