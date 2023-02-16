@@ -9,6 +9,7 @@ const Navbar = ({ setLanguage }) => {
     const [scroll, setScroll] = useState(false);
 
     const lang = langContext.navbar;
+    const linkedin = langContext.linkLinkedin;
     const titles = lang.navlinks.titles;
     const href = lang.navlinks.href;
 
@@ -180,11 +181,7 @@ const Navbar = ({ setLanguage }) => {
                         >
                             <GitHubIcon color="#34D399" width="2.1rem" height="2.1rem" />
                         </a>
-                        <a
-                            href="https://www.linkedin.com/in/lucaspereyradev/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        <a href={linkedin} target="_blank" rel="noreferrer">
                             <LinkedInIcon color="#34D399" width="2.1rem" height="2.1rem" />
                         </a>
                         <a
