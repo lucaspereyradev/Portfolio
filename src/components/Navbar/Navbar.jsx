@@ -81,7 +81,7 @@ const Navbar = ({ setLanguage }) => {
                         <div className="hidden gap-x-2 md:flex">
                             <button onClick={() => setLanguage('es')}>
                                 <img
-                                    src="/spain-flag.webp"
+                                    src="./spain-flag.webp"
                                     width={45}
                                     className="h-full rounded-[4px]"
                                     alt={lang.languages.es}
@@ -90,7 +90,7 @@ const Navbar = ({ setLanguage }) => {
                             </button>
                             <button onClick={() => setLanguage('en')}>
                                 <img
-                                    src="/usa-flag.webp"
+                                    src="./usa-flag.webp"
                                     width={45}
                                     className="h-full rounded-[4px]"
                                     alt={lang.languages.en}
@@ -99,7 +99,7 @@ const Navbar = ({ setLanguage }) => {
                             </button>
                             <button onClick={() => setLanguage('pt')}>
                                 <img
-                                    src="/brazil-flag.webp"
+                                    src="./brazil-flag.webp"
                                     width={45}
                                     className="h-full rounded-[4px]"
                                     alt={lang.languages.pt}
@@ -146,7 +146,7 @@ const Navbar = ({ setLanguage }) => {
                     <div className="mt-[6rem] flex w-full justify-center gap-x-5">
                         <button onClick={() => setLanguage('es')}>
                             <img
-                                src="/spain-flag.webp"
+                                src="./spain-flag.webp"
                                 width={45}
                                 className="h-full rounded-[4px]"
                                 alt={lang.languages.es}
@@ -155,7 +155,7 @@ const Navbar = ({ setLanguage }) => {
                         </button>
                         <button onClick={() => setLanguage('en')}>
                             <img
-                                src="/usa-flag.webp"
+                                src="./usa-flag.webp"
                                 width={45}
                                 className="h-full rounded-[4px]"
                                 alt={lang.languages.en}
@@ -164,7 +164,7 @@ const Navbar = ({ setLanguage }) => {
                         </button>
                         <button onClick={() => setLanguage('pt')}>
                             <img
-                                src="/brazil-flag.webp"
+                                src="./brazil-flag.webp"
                                 width={45}
                                 className="h-full rounded-[4px]"
                                 alt={lang.languages.pt}
