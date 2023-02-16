@@ -81,4 +81,4 @@ const Footer = () => {
     );
 };
 
-export default AppWrap(MotionWrap(Footer), 'Contacto', '', 'overflow-x-hidden overflow-y-hidden');
+export default AppWrap(MotionWrap(Footer), 'contact', '', 'overflow-x-hidden overflow-y-hidden');

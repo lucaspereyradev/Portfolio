@@ -4,9 +4,11 @@ import Typewriter from 'typewriter-effect';
 import { LangContext } from '../../App';
 import { AppWrap } from '../../wrapper';
 
-const Header = (props) => {
-    const lang = props.lang.header;
+const Header = () => {
+    const langContext = useContext(LangContext);
+    const lang = langContext.header;
 
+    console.log(lang);
     const handleDropdown = () => {
         const dropdown = document.getElementById('dropdown');
         dropdown.classList.toggle('hidden');
@@ -29,7 +31,7 @@ const Header = (props) => {
                         <span className="text-xl">
                             <Typewriter
                                 options={{
-                                    strings: ['Desarrollador Frontend', 'Full Stack JavaScript'],
+                                    strings: lang.typewriter,
                                     autoStart: true,
                                     loop: true,
                                     delay: 110,
@@ -39,14 +41,15 @@ const Header = (props) => {
                             />
                         </span>
                         <div className="mt-7 grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-4">
-                            <button className="rounded-xl bg-emerald-500 px-4 py-2 text-white shadow-lg shadow-emerald-700/60 transition hover:bg-emerald-700">
-                                <a href="#Proyectos">Ver Proyectos</a>
+                            <button className="w-[13rem] rounded-xl bg-emerald-500 px-4 py-2 text-white shadow-lg shadow-emerald-700/60 transition hover:bg-emerald-700">
+                                <a href="#projects">{lang.textBtnProjects}</a>
                             </button>
                             <button
-                                className="relative rounded-xl bg-emerald-500 px-4 py-2 text-white shadow-lg shadow-emerald-700/60 transition hover:bg-emerald-700"
+                                className="relative w-[13rem] rounded-xl bg-emerald-500 px-4 py-2 text-white shadow-lg shadow-emerald-700/60 transition hover:bg-emerald-700"
                                 onClick={handleDropdown}
                             >
-                                <i className="fa-solid fa-download" /> <span>Descargar CV</span>
+                                <i className="fa-solid fa-download" />{' '}
+                                <span>{lang.textBtnDownload}</span>
                                 <div
                                     id="dropdown"
                                     className="absolute mt-2 hidden w-max min-w-full -translate-x-4 rounded-xl bg-white shadow-md"
@@ -57,7 +60,7 @@ const Header = (props) => {
                                                 href="./cv-lucaspereyra-español.pdf"
                                                 download="./cv-lucaspereyra-español.pdf"
                                             >
-                                                Español
+                                                {lang.textSpanish}
                                             </a>
                                         </li>
                                         <li className="px-5 py-2">
@@ -65,7 +68,7 @@ const Header = (props) => {
                                                 href="./cv-lucaspereyra-english.pdf"
                                                 download="./cv-lucaspereyra-english.pdf"
                                             >
-                                                Inglés
+                                                {lang.textEnglish}
                                             </a>
                                         </li>
                                     </ul>
@@ -79,4 +82,4 @@ const Header = (props) => {
     );
 };
 
-export default AppWrap(Header, lang.header.redirect, '', 'absolute h-full');
+export default AppWrap(Header, 'home', '', 'absolute h-full');

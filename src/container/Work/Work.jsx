@@ -189,4 +189,4 @@ const Work = () => {
     );
 };
 
-export default AppWrap(MotionWrap(Work, 'app__works'), 'Proyectos', '', '');
+export default AppWrap(MotionWrap(Work, 'app__works'), 'projects', '', '');

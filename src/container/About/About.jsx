@@ -60,4 +60,4 @@ const About = () => {
     );
 };
 
-export default AppWrap(MotionWrap(About), 'Sobre mí', 'bg-white', '');
+export default AppWrap(MotionWrap(About), 'aboutme', 'bg-white', '');

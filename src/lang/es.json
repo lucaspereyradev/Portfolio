@@ -1,7 +1,9 @@
 {
     "navbar": {
-        "redirect": "#Inicio",
-        "titles": ["Inicio", "Sobre mí", "Proyectos", "Skills", "Contacto"],
+        "navlinks": {
+            "titles": ["Inicio", "Sobre mí", "Proyectos", "Skills", "Contacto"],
+            "href": ["home", "aboutme", "projects", "skills", "contact"]
+        },
         "languages": {
             "es": "Página en español",
             "en": "Página en inglés",
@@ -9,7 +11,10 @@
         }
     },
     "header": {
-        "redirect": "#Inicio",
-        "title": "Lucas Pereyra"
+        "typewriter": ["Full Stack JavaScript", "Desarrollador Frontend"],
+        "textBtnProjects": "Ver Proyectos",
+        "textBtnDownload": "Descargar CV",
+        "textSpanish": "Español",
+        "textEnglish": "Inglés"
     }
 }
