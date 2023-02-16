@@ -32,7 +32,7 @@ export default function App() {
     return (
         <LangContext.Provider value={texts}>
             <Navbar setLanguage={setLanguage} />
-            <Header lang={texts} />
+            <Header />
             <About />
             <Work />
             <Skills />

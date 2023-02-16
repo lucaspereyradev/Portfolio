@@ -1,7 +1,9 @@
 {
     "navbar": {
-        "redirect": "#Inicio",
-        "titles": ["Inicio", "Sobre mí", "Proyectos", "Skills", "Contacto"],
+        "navlinks": {
+            "titles": ["Inicio", "Sobre mí", "Proyectos", "Skills", "Contacto"],
+            "href": ["home", "aboutme", "projects", "skills", "contact"]
+        },
         "languages": {
             "es": "Página en español",
             "en": "Página en inglés",
@@ -9,7 +11,40 @@
         }
     },
     "header": {
-        "redirect": "#Inicio",
-        "title": "Lucas Pereyra"
+        "typewriter": ["Full Stack JavaScript", "Desarrollador Frontend"],
+        "textBtnProjects": "Ver Proyectos",
+        "textBtnDownload": "Descargar CV",
+        "textSpanish": "Español",
+        "textEnglish": "Inglés"
+    },
+    "aboutme": {
+        "titles": {
+            "text1": "Siempre los",
+            "text2": " Buenos desarrollos",
+            "text3": "Son",
+            "text4": " Buenos negocios"
+        },
+        "abouts": [
+            {
+                "title": "Inspiración",
+                "description": "Cada proyecto es un mundo nuevo.",
+                "imageUrl": "./about01.png"
+            },
+            {
+                "title": "Desarrollo inteligente",
+                "description": "Proyectos eficaces e intuitivos.",
+                "imageUrl": "./about03.png"
+            },
+            {
+                "title": "Diseño agradable",
+                "description": "Lo agradable genera un ambiente distinto.",
+                "imageUrl": "./about04.png"
+            },
+            {
+                "title": "Desarrollo Full Stack",
+                "description": "Cada tecnologia es importante.",
+                "imageUrl": "./about02.png"
+            }
+        ]
     }
 }

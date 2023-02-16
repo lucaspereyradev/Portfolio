@@ -9,6 +9,8 @@ const Navbar = ({ setLanguage }) => {
     const [scroll, setScroll] = useState(false);
 
     const lang = langContext.navbar;
+    const titles = lang.navlinks.titles;
+    const href = lang.navlinks.href;
 
     const logoLeft = '<';
     const logoRigth = '/>';
@@ -41,7 +43,7 @@ const Navbar = ({ setLanguage }) => {
                         <div>
                             <a
                                 className="flex items-center text-2xl font-bold leading-none"
-                                href={lang.redirect}
+                                href="#home"
                             >
                                 <span className="text-emerald-400">{logoLeft} </span>
                                 <span
@@ -56,13 +58,13 @@ const Navbar = ({ setLanguage }) => {
                         </div>
 
                         <ul className="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform gap-x-4 md:mx-auto md:flex md:w-auto md:items-center lg:gap-x-6">
-                            {lang.titles.map((text) => (
+                            {titles.map((title, index) => (
                                 <li
-                                    key={`link-${text}`}
+                                    key={`link-${title}`}
                                     className="whitespace-nowrap transition-colors hover:text-emerald-400"
                                 >
                                     <div />
-                                    <a href={`#${text}`}>{text}</a>
+                                    <a href={`#${href[index]}`}>{title}</a>
                                 </li>
                             ))}
                         </ul>
@@ -128,13 +130,13 @@ const Navbar = ({ setLanguage }) => {
                         <CloseIcon color="#34D399" />
                     </button>
                     <ul className="mt-[6rem] flex h-full w-full list-none flex-col items-start justify-start px-4">
-                        {lang.titles.map((text) => (
+                        {titles.map((title, index) => (
                             <li
-                                key={text}
+                                key={title}
                                 className="m-4 text-xl font-medium uppercase transition-colors hover:text-emerald-400"
                             >
-                                <a href={`#${text}`} onClick={() => setToggle(false)}>
-                                    {text}
+                                <a href={`#${href[index]}`} onClick={() => setToggle(false)}>
+                                    {title}
                                 </a>
                             </li>
                         ))}

@@ -1,7 +1,9 @@
 {
     "navbar": {
-        "redirect": "#Home",
-        "titles": ["Home", "About me", "Projects", "Skills", "Contact"],
+        "navlinks": {
+            "titles": ["Home", "About me", "Projects", "Skills", "Contact"],
+            "href": ["home", "aboutme", "projects", "skills", "contact"]
+        },
         "languages": {
             "es": "Page in spanish",
             "en": "Page in english",
@@ -9,7 +11,10 @@
         }
     },
     "header": {
-        "redirect": "#Home",
-        "title": "Lucas Pereyra"
+        "typewriter": ["Full Stack JavaScript", "Frontend Developer"],
+        "textBtnProjects": "View Projects",
+        "textBtnDownload": "Download Resume",
+        "textSpanish": "Spanish",
+        "textEnglish": "English"
     }
 }
