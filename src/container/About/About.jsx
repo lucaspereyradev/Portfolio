@@ -6,7 +6,6 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 const About = () => {
     const langContext = useContext(LangContext);
     const lang = langContext.aboutme;
-    console.log(lang);
 
     const titles = lang.titles;
     const abouts = lang.abouts;
