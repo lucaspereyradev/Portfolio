@@ -1,0 +1,40 @@
+{
+    "skills": [
+        {
+            "name": "HTML",
+            "icon": "HtmlIcon"
+        },
+        {
+            "name": "CSS",
+            "icon": "CssIcon"
+        },
+        {
+            "name": "Javascript",
+            "icon": "JSIcon"
+        },
+        {
+            "name": "React",
+            "icon": "ReactIcon"
+        },
+        {
+            "name": "Nodejs",
+            "icon": "NodeJSIcon"
+        },
+        {
+            "name": "MySQL",
+            "icon": "MySQLIcon"
+        },
+        {
+            "name": "SASS",
+            "icon": "SassIcon"
+        },
+        {
+            "name": "Bootstrap",
+            "icon": "BootstrapIcon"
+        },
+        {
+            "name": "TailwindCSS",
+            "icon": "TailwindIcon"
+        }
+    ]
+}
