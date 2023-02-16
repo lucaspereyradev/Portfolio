@@ -3,31 +3,40 @@ import { Navbar } from './components';
 import { About, Header, Work, Skills, Footer } from './container';
 import axios from 'axios';
 
-const Lang = createContext();
+export const LangContext = createContext();
 
-function App() {
+export default function App() {
     const [language, setLanguage] = useState('es');
-    const [texts, setTexts] = useState([]);
+    const [texts, setTexts] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const langJSON = async () => {
-            const response = await axios.get(`./lang/${language}.json`);
-            setTexts(response.data);
+            try {
+                const response = await axios.get(`./src/lang/${language}.json`);
+                setTexts(response.data);
+            } catch (error) {
+                console.error(error);
+            } finally {
+                setIsLoading(false);
+            }
         };
 
         langJSON();
     }, [language]);
 
+    if (isLoading || !texts) {
+        return <div></div>;
+    }
+
     return (
-        <Lang.Provider value={texts}>
+        <LangContext.Provider value={texts}>
             <Navbar setLanguage={setLanguage} />
-            <Header />
+            <Header lang={texts} />
             <About />
             <Work />
             <Skills />
             <Footer />
-        </Lang.Provider>
+        </LangContext.Provider>
     );
 }
-
-export default App;
