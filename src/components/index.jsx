@@ -1,5 +1,6 @@
 // Components
 export { default as Navbar } from './Navbar/Navbar';
+export { default as ButtonDropdown } from './Header/ButtonDropdown';
 export { default as NavigationDots } from './NavigationDots';
 export { default as SocialMedia } from './SocialMedia';
 
