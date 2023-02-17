@@ -3,15 +3,11 @@ import HeroVideo from '../../assets/videos/hero.mp4';
 import Typewriter from 'typewriter-effect';
 import { LangContext } from '../../App';
 import { AppWrap } from '../../wrapper';
+import { ButtonDropdown } from '../../components';
 
 const Header = () => {
     const langContext = useContext(LangContext);
     const lang = langContext.header;
-
-    const handleDropdown = () => {
-        const dropdown = document.getElementById('dropdown');
-        dropdown.classList.toggle('hidden');
-    };
 
     return (
         <>
@@ -43,36 +39,7 @@ const Header = () => {
                             <button className="w-[13rem] rounded-xl bg-emerald-500 px-4 py-2 text-white shadow-lg shadow-emerald-700/60 transition hover:bg-emerald-700">
                                 <a href="#projects">{lang.textBtnProjects}</a>
                             </button>
-                            <button
-                                className="relative w-[13rem] rounded-xl bg-emerald-500 px-4 py-2 text-white shadow-lg shadow-emerald-700/60 transition hover:bg-emerald-700"
-                                onClick={handleDropdown}
-                            >
-                                <i className="fa-solid fa-download" />{' '}
-                                <span>{lang.textBtnDownload}</span>
-                                <div
-                                    id="dropdown"
-                                    className="absolute mt-2 hidden w-max min-w-full -translate-x-4 rounded-xl bg-white shadow-md"
-                                >
-                                    <ul className="rounded-sm text-left text-CustomBlack">
-                                        <li className="border-b px-5 py-2">
-                                            <a
-                                                href="./cv-lucaspereyra-español.pdf"
-                                                download="./cv-lucaspereyra-español.pdf"
-                                            >
-                                                {lang.textSpanish}
-                                            </a>
-                                        </li>
-                                        <li className="px-5 py-2">
-                                            <a
-                                                href="./cv-lucaspereyra-english.pdf"
-                                                download="./cv-lucaspereyra-english.pdf"
-                                            >
-                                                {lang.textEnglish}
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </button>
+                            <ButtonDropdown lang={lang} />
                         </div>
                     </div>
                 </div>
