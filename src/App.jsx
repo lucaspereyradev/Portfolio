@@ -14,7 +14,7 @@ export default function App() {
         const langJSON = async () => {
             try {
                 const response = await axios.get(
-                    `https://raw.githubusercontent.com/lucaspereyradev/portfolio/main/src/lang/${language}.json`
+                    `./lang/${language}.json`
                 );
                 setTexts(response.data);
             } catch (error) {
