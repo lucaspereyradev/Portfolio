@@ -1,0 +1,134 @@
+{
+    "navbar": {
+        "navlinks": {
+            "titles": ["Início", "Sobre mim", "Projetos", "Skills", "Contato"],
+            "href": ["home", "aboutme", "projects", "skills", "contact"]
+        },
+        "languages": {
+            "es": "Página em espanhol",
+            "en": "Página em inglês",
+            "pt": "Página em português"
+        }
+    },
+    "header": {
+        "typewriter": ["Full Stack JavaScript", "Desenvolvedor Frontend"],
+        "textBtnProjects": "Ver Projetos",
+        "textBtnDownload": "Baixar CV",
+        "textSpanish": "Espanhol",
+        "textEnglish": "Inglês",
+        "textPortuguese": "Português"
+    },
+    "aboutme": {
+        "titles": {
+            "text1": "Os",
+            "text2": " Bons desenvolvimentos",
+            "text3": "sempre são",
+            "text4": " Negócios rentáveis."
+        },
+        "abouts": [
+            {
+                "title": "Inspiração",
+                "description": "Cada projeto é um mundo novo.",
+                "imageUrl": "./about01.png"
+            },
+            {
+                "title": "Desenvolvimento inteligente",
+                "description": "Projetos eficazes e intuitivos.",
+                "imageUrl": "./about03.png"
+            },
+            {
+                "title": "Design agradável",
+                "description": "Um design agradável melhora o ambiente e a produtividade.",
+                "imageUrl": "./about04.png"
+            },
+            {
+                "title": "Desenvolvimento Full Stack",
+                "description": "Cada tecnologia oferece soluções únicas de acordo com as necessidades específicas.",
+                "imageUrl": "./about02.png"
+            }
+        ]
+    },
+    "work": {
+        "title": {
+            "text1": "Meus",
+            "text2": "Projetos"
+        },
+        "btnTitles": ["Todos", "Frontend", "Backend"],
+        "works": [
+            {
+                "title": "Portfolio",
+                "technologies": ["React", "TailwindCSS"],
+                "description": "Portfólio pessoal",
+                "imageUrl": "./project-portfolio.png",
+                "tags": ["Frontend"],
+                "projectLinkDemo": "https://lucaspereyradev.github.io/portfolio/",
+                "projectLinkGithub": "https://github.com/lucaspereyradev/portfolio"
+            },
+            {
+                "title": "DevCoin",
+                "technologies": ["React", "TailwindCSS", "Nodejs", "MySQL"],
+                "description": "Exchange virtual de criptomoedas.",
+                "imageUrl": "./logo-devcoin.jpg",
+                "tags": ["Frontend", "Backend"],
+                "projectLinkDemo": "https://dev-coin.web.app/",
+                "projectLinkGithub": "https://github.com/lucaspereyradev/devCoin-front"
+            },
+            {
+                "title": "E-commerce 'TuTienda'",
+                "technologies": ["React", "TailwindCSS", "Nodejs", "MySQL"],
+                "description": "E-commerce de dispositivos eletrônicos.",
+                "imageUrl": "./logo-tutienda.png",
+                "tags": ["Frontend", "Backend"],
+                "projectLinkDemo": "https://ecommerce-tutienda.web.app/",
+                "projectLinkGithub": "https://github.com/lucaspereyradev/E-commerce-tutienda"
+            },
+            {
+                "title": "CryptoWallet",
+                "technologies": ["React", "TailwindCSS", "Nodejs", "MySQL"],
+                "description": "Carteira virtual de criptomoedas.",
+                "imageUrl": "./logo-cryptowallet.png",
+                "tags": ["Frontend", "Backend"],
+                "projectLinkDemo": "https://github.com/lucaspereyradev/Dev-Place-Bootcamp-FSJS/tree/main/Proyecto-Individual-CryptoWallet/client",
+                "projectLinkGithub": "https://github.com/lucaspereyradev/Dev-Place-Bootcamp-FSJS/tree/main/Proyecto-Individual-CryptoWallet/client"
+            }
+        ],
+        "titlesBtnCards": {
+            "text1": "Ver",
+            "text2": "Repositório"
+        }
+    },
+    "skills": {
+        "title": {
+            "text1": "Minhas",
+            "text2": "Habilidades",
+            "text3": "e",
+            "text4": "Formação"
+        },
+        "formation": [
+            {
+                "name": "Bootcamp Full Stack em Javascript",
+                "place": "Dev Place",
+                "description": "Eu estudei e criei projetos Full Stack",
+                "year": "Out. 2022 - Fev. 2023",
+                "link": "https://www.devplace.com.ar/"
+            },
+            {
+                "name": "Técnico de informática pessoal e profissional",
+                "place": "Escuela de Educación Secundaria Técnica n°5 'Amancio Williams'",
+                "description": "Adquiri conhecimentos em programação, sistemas, redes e mais.",
+                "year": "Mar. 2015 - Fev. 2022",
+                "link": "https://cutt.ly/o91aLxz"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Vamos conversar!",
+        "input": {
+            "namePlaceholder": "Nome",
+            "descriptionPlaceholder": "Descrição"
+        },
+        "btn": "Enviar",
+        "autorText": "Feito com ❤️ por Lucas Pereyra"
+    },
+    "linkLinkedin": "https://www.linkedin.com/in/lucaspereyradev/?locale=pt_BR"
+}
