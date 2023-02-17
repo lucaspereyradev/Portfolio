@@ -70,6 +70,14 @@ const Header = () => {
                                                 {lang.textEnglish}
                                             </a>
                                         </li>
+                                        <li className="px-5 py-2">
+                                            <a
+                                                href="./cv-lucaspereyra-português.pdf"
+                                                download="./cv-lucaspereyra-português.pdf"
+                                            >
+                                                {lang.textPortuguese}
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </button>
