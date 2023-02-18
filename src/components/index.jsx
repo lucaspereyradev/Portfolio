@@ -4,6 +4,8 @@ export { default as ButtonDropdown } from './Header/ButtonDropdown';
 export { default as NavigationDots } from './NavigationDots';
 export { default as SocialMedia } from './SocialMedia';
 export { default as ProjectCard } from './Work/ProjectCard';
+export { default as TemplateSkill } from './Skills/TemplateSkill';
+export { default as Formation } from './Skills/Formation';
 
 // Icons
 export { default as BarsIcon } from './icons/BarsIcon/BarsIcon';
