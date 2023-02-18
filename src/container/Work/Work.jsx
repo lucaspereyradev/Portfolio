@@ -32,7 +32,7 @@ const Work = () => {
     };
 
     return (
-        <div className="app__container">
+        <div className="app__container mt-[7rem]">
             <h2 className="head-text">
                 {title.text1} <span className="text-emerald-400">{title.text2}</span>
             </h2>

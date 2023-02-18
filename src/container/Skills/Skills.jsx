@@ -14,7 +14,7 @@ const Skills = () => {
 
     return (
         <div className="app__container">
-            <h2 className="head-text ">
+            <h2 className="head-text">
                 {title.text1} <span className="text-emerald-400">{title.text2}</span> {title.text3}{' '}
                 <span className="text-emerald-400">{title.text4}</span>
             </h2>
@@ -26,7 +26,7 @@ const Skills = () => {
                     })}
                 </motion.div>
 
-                <motion.div className="max:xsm:pl-0 mx-auto flex flex-1 flex-col max-lg:mt-8 max-md:pl-8 max-1xsm:px-4 lg:items-start lg:justify-start">
+                <motion.div className="mx-auto flex flex-1 flex-col max-lg:mt-8 max-md:pl-8 max-xsm:pl-0 max-1xsm:px-[2.5rem] lg:items-start lg:justify-start">
                     {formation.map((item, index) => (
                         <Formation item={item} key={index} />
                     ))}

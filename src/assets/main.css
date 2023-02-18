@@ -19,7 +19,7 @@
     }
 
     .head-text {
-        @apply text-center text-3xl font-semibold md:text-[2rem];
+        @apply text-center text-3xl font-semibold max-sm:px-4 md:text-[2rem];
     }
 
     .app__skills {
