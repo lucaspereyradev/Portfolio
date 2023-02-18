@@ -6,6 +6,7 @@ export { default as SocialMedia } from './SocialMedia';
 export { default as ProjectCard } from './Work/ProjectCard';
 export { default as TemplateSkill } from './Skills/TemplateSkill';
 export { default as Formation } from './Skills/Formation';
+export { default as ContactForm } from './Footer/ContactForm';
 
 // Icons
 export { default as BarsIcon } from './icons/BarsIcon/BarsIcon';

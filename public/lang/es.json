@@ -57,7 +57,7 @@
         "works": [
             {
                 "title": "Portfolio",
-                "technologies": ["React", "TailwindCSS"],
+                "technologies": ["React", "TailwindCSS", "FramerMotion"],
                 "description": "Portafolio personal",
                 "imageUrl": "./project-portfolio.png",
                 "tags": ["Frontend"],
