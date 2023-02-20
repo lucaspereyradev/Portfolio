@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { LangContext } from '../../App';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -7,7 +7,6 @@ import { ProjectCard } from '../../components';
 const Work = () => {
     const langContext = useContext(LangContext);
     const lang = langContext.work;
-
     const title = lang.title;
     const btnTitles = lang.btnTitles;
     const works = lang.works;
@@ -17,17 +16,20 @@ const Work = () => {
     const [filterWork, setFilterWork] = useState(works);
     const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
+    useEffect(() => {
+        if (activeFilter === btnTitles[0]) {
+            setFilterWork(works);
+        } else {
+            setFilterWork(works.filter((work) => work.tags.includes(activeFilter)));
+        }
+    }, [lang, activeFilter, btnTitles, works]);
+
     const handleWorkFilter = (item) => {
         setActiveFilter(item);
         setAnimateCard([{ y: 100, opacity: 0 }]);
 
         setTimeout(() => {
             setAnimateCard([{ y: 0, opacity: 1 }]);
-            if (item === btnTitles[0]) {
-                setFilterWork(works);
-            } else {
-                setFilterWork(works.filter((work) => work.tags.includes(item)));
-            }
         }, 200);
     };
 
@@ -41,8 +43,10 @@ const Work = () => {
                 {btnTitles.map((item, index) => (
                     <div
                         key={index}
-                        onClick={() => handleWorkFilter(item)}
-                        className={`m-2 flex cursor-pointer flex-row rounded-lg px-6 py-3 font-bold transition-all hover:bg-CustomBlack/70 hover:text-white ${
+                        onClick={() => {
+                            handleWorkFilter(item);
+                        }}
+                        className={`m-2 flex cursor-pointer flex-row rounded-md px-6 py-3 font-bold transition-all hover:bg-CustomBlack/70 hover:text-white ${
                             activeFilter === item
                                 ? 'bg-CustomBlack text-white'
                                 : 'bg-white text-CustomBlack'

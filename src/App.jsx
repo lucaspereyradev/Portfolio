@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 import { Navbar } from './components';
-import { About, Header, Work, Skills, Footer } from './container';
+import { About, Header, Work, Footer } from './container';
 import axios from 'axios';
 
 export const LangContext = createContext();
@@ -13,9 +13,7 @@ export default function App() {
     useEffect(() => {
         const langJSON = async () => {
             try {
-                const response = await axios.get(
-                    `./lang/${language}.json`
-                );
+                const response = await axios.get(`./lang/${language}.json`);
                 setTexts(response.data);
             } catch (error) {
                 console.error(error);
@@ -37,7 +35,6 @@ export default function App() {
             <Header />
             <About />
             <Work />
-            <Skills />
             <Footer />
         </LangContext.Provider>
     );

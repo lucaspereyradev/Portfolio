@@ -3,11 +3,12 @@ import { motion } from 'framer-motion';
 import { EyeIcon, GitHubIcon } from '../../components';
 
 function ProjectCard({ work, titlesBtnCards }) {
+    const description = work.description;
     return (
-        <div className="m-4 flex w-[200px] cursor-pointer flex-col justify-start rounded-lg bg-white p-4 text-CustomBlack transition-all hover:shadow-lg max-xsm:w-full max-1xsm:m-2 xsm:w-[350px] sm:w-[300px]">
+        <div className="m-4 flex w-[200px] cursor-pointer flex-col justify-start rounded-md bg-white p-4 text-CustomBlack transition-all hover:shadow-lg max-xsm:w-full max-1xsm:m-2 xsm:w-[350px] sm:w-[300px]">
             <div className="relative flex h-[160px] w-full items-center justify-center md:h-[230px]">
                 <img
-                    className="h-full w-full rounded-lg object-cover"
+                    className="h-full w-full rounded-md object-cover"
                     src={work.imageUrl}
                     alt={work.title}
                 />
@@ -19,7 +20,7 @@ function ProjectCard({ work, titlesBtnCards }) {
                         ease: 'easeInOut',
                         staggerChildren: 0.5,
                     }}
-                    className="absolute top-0 left-0 bottom-0 right-0 flex h-full w-full items-center justify-center rounded-lg bg-CustomBlack/50 opacity-0 transition-all"
+                    className="absolute top-0 left-0 bottom-0 right-0 flex h-full w-full items-center justify-center rounded-md bg-CustomBlack/50 opacity-0 transition-all"
                 >
                     <a href={work.projectLinkDemo} target="_blank" rel="noreferrer">
                         <motion.div
@@ -47,12 +48,12 @@ function ProjectCard({ work, titlesBtnCards }) {
 
             <div className="relative flex w-full flex-col items-center justify-center p-2">
                 <h4 className="mt-4 text-center text-lg font-bold">{work.title}</h4>
-                <p className="mt-[10px] text-center">{work.description}</p>
+                <p className="mt-[10px] text-center">{description}</p>
 
                 <div className="absolute -top-4 flex items-center justify-center">
                     <p className="flex gap-2">
                         {work.tags.map((tags, index) => (
-                            <span key={index} className="rounded-xl bg-gray-200 px-2 py-1">
+                            <span key={index} className="rounded-md bg-gray-200 px-2 py-1">
                                 {tags}
                             </span>
                         ))}
@@ -61,7 +62,7 @@ function ProjectCard({ work, titlesBtnCards }) {
 
                 <h6 className="mt-5 flex flex-wrap items-center justify-center gap-2">
                     {work.technologies.map((item, index) => (
-                        <span key={index} className="rounded-xl bg-slate-700 px-2 text-white">
+                        <span key={index} className="rounded-md bg-slate-700 px-2 text-white">
                             {item}
                         </span>
                     ))}

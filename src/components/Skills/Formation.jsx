@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 function Formation({ item }) {
     return (
-        <motion.div className="my-4 mx-0 flex w-full flex-row items-start justify-start">
+        <motion.div className="my-4 mx-0 flex w-full flex-col items-start justify-start md:flex-row">
             <div className="mr-[1rem] lg:mr-[2rem]">
                 <p className="text-emerald-800 max-xsm:mr-4">{item.year}</p>
             </div>

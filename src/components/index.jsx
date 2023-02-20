@@ -24,3 +24,6 @@ export { default as ReactIcon } from './icons/ReactIcon/ReactIcon';
 export { default as SassIcon } from './icons/SassIcon/SassIcon';
 export { default as TailwindIcon } from './icons/TailwindIcon/TailwindIcon';
 export { default as EyeIcon } from './icons/EyeIcon/EyeIcon';
+export { default as HatIcon } from './icons/HatIcon/HatIcon';
+export { default as AboutIcon } from './icons/AboutIcon/AboutIcon';
+export { default as StarIcon } from './icons/StarIcon/StarIcon';
