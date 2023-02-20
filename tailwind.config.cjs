@@ -8,6 +8,7 @@ module.exports = {
                 '2xsm': '293px',
                 '1xsm': '330px',
                 xsm: '500px',
+                500: '500px',
             },
             height: {
                 '50vh': '50vh',

@@ -6,8 +6,8 @@ function LanguageButtons({ lang, setLanguage }) {
             <button onClick={() => setLanguage('es')}>
                 <img
                     src="./spain-flag.webp"
-                    width={45}
-                    className="h-full rounded-[4px]"
+                    width={40}
+                    className="h-full rounded-md"
                     alt={lang.languages.es}
                     title={lang.languages.es}
                 />
@@ -15,8 +15,8 @@ function LanguageButtons({ lang, setLanguage }) {
             <button onClick={() => setLanguage('en')}>
                 <img
                     src="./usa-flag.webp"
-                    width={45}
-                    className="h-full rounded-[4px]"
+                    width={40}
+                    className="h-full rounded-md"
                     alt={lang.languages.en}
                     title={lang.languages.en}
                 />
@@ -24,8 +24,8 @@ function LanguageButtons({ lang, setLanguage }) {
             <button onClick={() => setLanguage('pt')}>
                 <img
                     src="./brazil-flag.webp"
-                    width={45}
-                    className="h-full rounded-[4px]"
+                    width={40}
+                    className="h-full rounded-md"
                     alt={lang.languages.pt}
                     title={lang.languages.pt}
                 />

@@ -22,7 +22,9 @@ const Header = () => {
                     ></video>
                     <div className="absolute top-0 left-0 h-full w-full bg-black/70"></div>
                     <div className="absolute top-0 left-0 m-auto flex h-full w-full flex-col items-center justify-center text-center 2xl:-top-12">
-                        <h1 className="mb-4 text-5xl font-semibold md:text-6xl">Lucas Pereyra</h1>
+                        <h1 className="animation font-[Prompt] text-5xl font-semibold uppercase italic md:text-6xl">
+                            Lucas Pereyra
+                        </h1>
                         <span className="text-xl">
                             <Typewriter
                                 options={{
@@ -35,10 +37,13 @@ const Header = () => {
                                 }}
                             />
                         </span>
-                        <div className="mt-7 grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-4">
-                            <button className="w-[13rem] rounded-xl bg-emerald-500 px-4 py-2 text-white shadow-lg shadow-emerald-700/60 transition hover:bg-emerald-700">
-                                <a href="#projects">{lang.textBtnProjects}</a>
-                            </button>
+                        <div className="mt-[4rem] grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-4">
+                            <a
+                                href="#projects"
+                                className="w-[13rem] rounded-md bg-emerald-500 px-4 py-2 text-white shadow-lg shadow-emerald-700/60 transition hover:bg-emerald-700"
+                            >
+                                {lang.textBtnProjects}
+                            </a>
                             <ButtonDropdown lang={lang} />
                         </div>
                     </div>

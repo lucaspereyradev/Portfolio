@@ -5,7 +5,7 @@ function Logo({ textColor }) {
     const logoRigth = '/>';
 
     return (
-        <a className="flex items-center text-2xl font-bold leading-none" href="#home">
+        <a className="flex items-center font-[Prompt] text-2xl font-bold leading-none" href="#home">
             <span className="text-emerald-400">{logoLeft} </span>
             <span className={`font-medium ${textColor}`}>lukedev</span>
             <span className="text-emerald-400"> {logoRigth}</span>

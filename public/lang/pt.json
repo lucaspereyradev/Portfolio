@@ -1,8 +1,8 @@
 {
     "navbar": {
         "navlinks": {
-            "titles": ["Início", "Sobre mim", "Projetos", "Skills", "Contato"],
-            "href": ["home", "aboutme", "projects", "skills", "contact"]
+            "titles": ["Início", "Sobre mim", "Projetos", "Contato"],
+            "href": ["home", "aboutme", "projects", "contact"]
         },
         "languages": {
             "es": "Página em espanhol",
@@ -11,7 +11,7 @@
         }
     },
     "header": {
-        "typewriter": ["Full Stack JavaScript", "Desenvolvedor Frontend"],
+        "typewriter": ["Full Stack em JavaScript", "Desenvolvedor Frontend"],
         "textBtnProjects": "Ver Projetos",
         "textBtnDownload": "Baixar CV",
         "textSpanish": "Espanhol",
@@ -19,34 +19,38 @@
         "textPortuguese": "Português"
     },
     "aboutme": {
-        "titles": {
-            "text1": "Os",
-            "text2": " Bons desenvolvimentos",
-            "text3": "sempre são",
-            "text4": " Negócios rentáveis."
+        "imageTexts": {
+            "text1": "Desenvolvedor Frontend",
+            "text2": "Full Stack em JavaScript"
         },
-        "abouts": [
-            {
-                "title": "Inspiração",
-                "description": "Cada projeto é um mundo novo.",
-                "imageUrl": "./about01.png"
-            },
-            {
-                "title": "Desenvolvimento inteligente",
-                "description": "Projetos eficazes e intuitivos.",
-                "imageUrl": "./about03.png"
-            },
-            {
-                "title": "Design agradável",
-                "description": "Um design agradável melhora o ambiente e a produtividade.",
-                "imageUrl": "./about04.png"
-            },
-            {
-                "title": "Desenvolvimento Full Stack",
-                "description": "Cada tecnologia oferece soluções únicas de acordo com as necessidades específicas.",
-                "imageUrl": "./about02.png"
-            }
-        ]
+        "about": {
+            "title": "Sobre mim",
+            "paragraph1": "Minha paixão é o desenvolvimento, sou autodidata e um entusiasta de tecnologia. Adoro encontrar soluções criativas para problemas e sinto-me motivado a trabalhar em projetos desafiadores que me permitem aplicar minhas habilidades e conhecimentos.",
+            "paragraph2": "Como desenvolvedor, eu gosto de trabalhar em equipe para criar produtos incríveis que melhorem a vida das pessoas. Além disso, sempre busco oportunidades para aprender algo novo e aprimorar minhas habilidades.",
+            "paragraph3": "Estou animado pelas oportunidades que o futuro me reserva!"
+        },
+        "formation": {
+            "title": "Formação",
+            "formationDetails": [
+                {
+                    "name": "Bootcamp Full Stack em Javascript",
+                    "place": "Dev Place",
+                    "description": "Eu estudei e criei projetos Full Stack",
+                    "year": "Out. 2022 - Fev. 2023",
+                    "link": "https://www.devplace.com.ar/"
+                },
+                {
+                    "name": "Técnico de informática pessoal e profissional",
+                    "place": "Escuela de Educación Secundaria Técnica n°5 'Amancio Williams'",
+                    "description": "Adquiri conhecimentos em programação, sistemas, redes e mais.",
+                    "year": "Mar. 2015 - Fev. 2022",
+                    "link": "https://cutt.ly/o91aLxz"
+                }
+            ]
+        },
+        "skills": {
+            "title": "Habilidades"
+        }
     },
     "work": {
         "title": {
@@ -97,35 +101,11 @@
             "text2": "Repositório"
         }
     },
-    "skills": {
-        "title": {
-            "text1": "Minhas",
-            "text2": "Habilidades",
-            "text3": "e",
-            "text4": "Formação"
-        },
-        "formation": [
-            {
-                "name": "Bootcamp Full Stack em Javascript",
-                "place": "Dev Place",
-                "description": "Eu estudei e criei projetos Full Stack",
-                "year": "Out. 2022 - Fev. 2023",
-                "link": "https://www.devplace.com.ar/"
-            },
-            {
-                "name": "Técnico de informática pessoal e profissional",
-                "place": "Escuela de Educación Secundaria Técnica n°5 'Amancio Williams'",
-                "description": "Adquiri conhecimentos em programação, sistemas, redes e mais.",
-                "year": "Mar. 2015 - Fev. 2022",
-                "link": "https://cutt.ly/o91aLxz"
-            }
-        ]
-    },
     "contact": {
         "title": "Vamos conversar!",
         "input": {
             "namePlaceholder": "Nome",
-            "descriptionPlaceholder": "Descrição"
+            "descriptionPlaceholder": "Mensagem"
         },
         "btn": "Enviar",
         "autorText": "Feito com ❤️ por Lucas Pereyra"

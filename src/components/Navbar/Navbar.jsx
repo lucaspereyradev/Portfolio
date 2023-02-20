@@ -52,7 +52,7 @@ const Navbar = ({ setLanguage }) => {
                                 <BarsIcon color="#34D399" />
                             </button>
                         )}
-                        <div className="hidden gap-x-2 md:flex">
+                        <div className="hidden gap-x-4 md:flex">
                             <LanguageButtons setLanguage={setLanguage} lang={lang} />
                         </div>
                     </div>
