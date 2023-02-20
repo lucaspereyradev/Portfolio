@@ -18,26 +18,20 @@ function ButtonDropdown({ lang }) {
             >
                 <ul className="rounded-md text-left text-CustomBlack">
                     <li className="border-b px-5 py-2">
-                        <a
-                            href="./cv-lucaspereyra-español.pdf"
-                            download="./cv-lucaspereyra-español.pdf"
-                        >
+                        <a href="./es-cv-lucaspereyra.pdf" download="./es-cv-lucaspereyra.pdf">
                             {lang.textSpanish}
                         </a>
                     </li>
                     <li className="border-b px-5 py-2">
                         <a
-                            href="./cv-lucaspereyra-english.pdf"
-                            download="./cv-lucaspereyra-english.pdf"
+                            href="./en-resume-lucaspereyra.pdf"
+                            download="./en-resume-lucaspereyra.pdf"
                         >
                             {lang.textEnglish}
                         </a>
                     </li>
                     <li className="px-5 py-2">
-                        <a
-                            href="./cv-lucaspereyra-português.pdf"
-                            download="./cv-lucaspereyra-português.pdf"
-                        >
+                        <a href="./pt-cv-lucaspereyra.pdf" download="./pt-cv-lucaspereyra.pdf">
                             {lang.textPortuguese}
                         </a>
                     </li>
