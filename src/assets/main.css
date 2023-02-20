@@ -10,7 +10,7 @@
         scroll-behavior: smooth;
     }
     body {
-        @apply bg-slate-200 font-[Roboto];
+        @apply overflow-x-hidden bg-slate-200 font-[Roboto];
     }
 }
 
