@@ -22,7 +22,7 @@ const Header = () => {
                     ></video>
                     <div className="absolute top-0 left-0 h-full w-full bg-black/70"></div>
                     <div className="absolute top-0 left-0 m-auto flex h-full w-full flex-col items-center justify-center text-center 2xl:-top-12">
-                        <h1 className="animation font-[Prompt] text-5xl font-semibold uppercase italic md:text-6xl">
+                        <h1 className="animation px-4 font-[Prompt] text-5xl font-semibold uppercase italic md:text-6xl">
                             Lucas Pereyra
                         </h1>
                         <span className="text-xl">
