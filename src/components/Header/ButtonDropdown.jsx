@@ -17,23 +17,23 @@ function ButtonDropdown({ lang }) {
                 className="absolute mt-2 hidden w-max min-w-full -translate-x-4 rounded-sm bg-white shadow-md"
             >
                 <ul className="rounded-md text-left text-CustomBlack">
-                    <li className="border-b px-5 py-2">
-                        <a href="./es-cv-lucaspereyra.pdf" download="./es-cv-lucaspereyra.pdf">
-                            {lang.textSpanish}
-                        </a>
+                    <li
+                        className="border-b px-5 py-2"
+                        onClick={() => (window.location.href = './es-cv-lucaspereyra.pdf')}
+                    >
+                        <div className="w-full cursor-pointer">{lang.textSpanish}</div>
                     </li>
-                    <li className="border-b px-5 py-2">
-                        <a
-                            href="./en-resume-lucaspereyra.pdf"
-                            download="./en-resume-lucaspereyra.pdf"
-                        >
-                            {lang.textEnglish}
-                        </a>
+                    <li
+                        className="border-b px-5 py-2"
+                        onClick={() => (window.location.href = './en-resume-lucaspereyra.pdf')}
+                    >
+                        <div className="w-full cursor-pointer">{lang.textEnglish}</div>
                     </li>
-                    <li className="px-5 py-2">
-                        <a href="./pt-cv-lucaspereyra.pdf" download="./pt-cv-lucaspereyra.pdf">
-                            {lang.textPortuguese}
-                        </a>
+                    <li
+                        className="border-b px-5 py-2"
+                        onClick={() => (window.location.href = './pt-cv-lucaspereyra.pdf')}
+                    >
+                        <div className="w-full cursor-pointer">{lang.textPortuguese}</div>
                     </li>
                 </ul>
             </div>
