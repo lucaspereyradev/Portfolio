@@ -19,19 +19,19 @@ function ButtonDropdown({ lang }) {
                 <ul className="rounded-md text-left text-CustomBlack">
                     <li
                         className="border-b px-5 py-2"
-                        onClick={() => (window.location.href = './es-cv-lucaspereyra.pdf')}
+                        onClick={() => (window.location.href = './cv/cv-es-lucaspereyra.pdf')}
                     >
                         <div className="w-full cursor-pointer">{lang.textSpanish}</div>
                     </li>
                     <li
                         className="border-b px-5 py-2"
-                        onClick={() => (window.location.href = './en-resume-lucaspereyra.pdf')}
+                        onClick={() => (window.location.href = './cv/cv-en-lucaspereyra.pdf')}
                     >
                         <div className="w-full cursor-pointer">{lang.textEnglish}</div>
                     </li>
                     <li
                         className="border-b px-5 py-2"
-                        onClick={() => (window.location.href = './pt-cv-lucaspereyra.pdf')}
+                        onClick={() => (window.location.href = './cv/cv-br-lucaspereyra.pdf')}
                     >
                         <div className="w-full cursor-pointer">{lang.textPortuguese}</div>
                     </li>
