@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CloseIcon, GitHubIcon, InstagramIcon, LinkedInIcon } from '../../';
-import { Logo, LanguageButtons, SectionsLinks } from '../';
+import { CloseIcon, GitHubIcon, InstagramIcon, LinkedInIcon } from '../..';
+import { Logo, LanguageButtons, SectionsLinks } from '..';
 
 function ResposiveMenu({ lang, setToggle, setLanguage, linkedin }) {
     return (

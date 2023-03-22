@@ -75,7 +75,7 @@ const About = () => {
                             <StarIcon />
                             <h2 className="text-3xl font-bold text-emerald-500">{titleSkills}</h2>
                         </div>
-                        <motion.div className="flex flex-wrap justify-center lg:justify-start xl:w-[80%]">
+                        <motion.div className="flex flex-wrap justify-center lg:justify-start xl:w-[90%]">
                             {skills.skills.map((item, index) => {
                                 return <TemplateSkill item={item} key={index} />;
                             })}
