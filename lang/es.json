@@ -29,6 +29,18 @@
             "paragraph2": "Como desarrollador, disfruto trabajando en equipo para crear productos impresionantes que mejoren la vida de las personas. Además, siempre busco oportunidades para aprender algo nuevo y mejorar mis habilidades.",
             "paragraph3": "¡Estoy emocionado por las oportunidades que el futuro me depara!"
         },
+        "experience": {
+            "title": "Experiencia",
+            "experienceDetails": [
+                {
+                    "name": "Desarrollador Frontend Jr.",
+                    "place": "ÜMA Salud IA",
+                    "description": "Implementación y actualización de Landings.",
+                    "year": "Jun. 2023 - Actualmente",
+                    "link": "https://www.umasalud.com/"
+                }
+            ]
+        },
         "formation": {
             "title": "Formación",
             "formationDetails": [
