@@ -6,7 +6,7 @@ export { default as ResponsiveMenu } from './Navbar/ResponsiveMenu/ResponsiveMen
 export { default as SectionsLinks } from './Navbar/SectionsLinks/SectionsLinks';
 export { default as Navbar } from './Navbar/Navbar';
 export { default as NavigationDots } from './NavigationDots';
-export { default as Formation } from './Skills/Formation';
+export { default as TemplateCareer } from './Skills/TemplateCareer';
 export { default as TemplateSkill } from './Skills/TemplateSkill';
 export { default as SocialMedia } from './SocialMedia';
 export { default as ProjectCard } from './Work/ProjectCard';

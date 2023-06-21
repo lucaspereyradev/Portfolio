@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { LangContext } from '../../App';
 import skills from '../../components/icons/icons.json';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { AboutIcon, Formation, HatIcon, StarIcon, TemplateSkill } from '../../components';
+import { AboutIcon, TemplateCareer, HatIcon, StarIcon, TemplateSkill } from '../../components';
 
 const About = () => {
     const langContext = useContext(LangContext);
@@ -11,6 +11,7 @@ const About = () => {
 
     const imageTexts = lang.imageTexts;
     const aboutme = lang.about;
+    const experience = lang.experience;
     const formation = lang.formation;
     const titleSkills = lang.skills.title;
 
@@ -57,12 +58,28 @@ const About = () => {
                         <div className="mb-4 flex items-center gap-x-4">
                             <HatIcon />
                             <h2 className="text-3xl font-bold text-emerald-500">
+                                {experience.title}
+                            </h2>
+                        </div>
+                        <div>
+                            {experience.experienceDetails.map((item, index) => (
+                                <TemplateCareer item={item} key={index} />
+                            ))}
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        <div className="mb-4 flex items-center gap-x-4">
+                            <HatIcon />
+                            <h2 className="text-3xl font-bold text-emerald-500">
                                 {formation.title}
                             </h2>
                         </div>
                         <div>
                             {formation.formationDetails.map((item, index) => (
-                                <Formation item={item} key={index} />
+                                <TemplateCareer item={item} key={index} />
                             ))}
                         </div>
                     </motion.div>

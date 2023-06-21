@@ -29,6 +29,18 @@
             "paragraph2": "As a developer, I enjoy working as part of a team to create amazing products that improve people's lives, while constantly seeking out opportunities to learn something new and improve my skills.",
             "paragraph3": "I am excited for the opportunities that the future holds for me!"
         },
+        "experience": {
+            "title": "Experience",
+            "experienceDetails": [
+                {
+                    "name": "Frontend Developer Jr.",
+                    "place": "ÜMA Health AI",
+                    "description": "Landings implementation and updating.",
+                    "year": "Jun. 2023 - Currently",
+                    "link": "https://www.umasalud.com/"
+                }
+            ]
+        },
         "formation": {
             "title": "Formation",
             "formationDetails": [

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-function Formation({ item }) {
+function TemplateCareer({ item }) {
     return (
         <motion.div className="my-4 mx-0 flex w-full flex-col items-start justify-start md:flex-row">
             <div className="mr-[1rem] lg:mr-[2rem]">
@@ -30,4 +30,4 @@ function Formation({ item }) {
     );
 }
 
-export default Formation;
+export default TemplateCareer;
