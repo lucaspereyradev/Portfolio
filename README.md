@@ -1,34 +1,34 @@
-# Professional personal portfolio.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-App link: https://lucaspereyradev.github.io/portfolio/
+## Getting Started
 
-| Tool            | Used to                                                                     |
-| --------------- | --------------------------------------------------------------------------- |
-| ✅ React   | Creating the UI with state based components   |
-| ✅ Vite  | Bootstraping the project in the most modern and efficient way   |
-| ✅ TailwindCSS   | Style the components based on utility-first classes      |
-| ✅ FramerMotion     | Animations CSS  |
-| ✅ Axios     | HTTP requests  |
-| ✅ Emailjs     | Email sending service  |
+First, run the development server:
 
-### Getting Started
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-👉 Clone the repository:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-https://github.com/lucaspereyradev/portfolio.git
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-👉 Install npm packages:
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-`npm install`
+## Learn More
 
-👉 Run the app:
+To learn more about Next.js, take a look at the following resources:
 
-`npm run dev`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Styling and Responsiveness
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-The app's design system is based on TailwindCSS, it's fully responsive and should render properly on all devices.
+## Deploy on Vercel
 
-### Contact me
-<img src="https://camo.githubusercontent.com/7e1a1a039c75a7c4d2a91d7f97bf0a1c2adcf7cb49b7dbbfc02963a4f9fdaca4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c696e6b6564696e2d2532333030373742352e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465" alt="Linkedin" data-canonical-src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" style="max-width: 100%;">
-<a href="https://www.linkedin.com/in/lucaspereyradev/"><u>Lucas Pereyra<u></a><br>
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
