@@ -26,7 +26,7 @@ export default function About() {
 
             <p>
                 <span className="italic">When I&apos;m not coding</span>, I enjoy playing video games and watching movies or series. I
-                also enjoy <span className="font-medium">learning new things</span>.
+                also enjoy <span className="font-medium">learning new things or technologies</span> like <span className="font-medium">Next.js</span> and <span className="font-medium">Flutter.</span>
             </p>
         </motion.section>
     )

@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .timelineDateStyle {
-    @apply lg:!py-[0.5rem] lg:!px-[1rem];
+	@apply lg:!py-[0.5rem] lg:!px-[1rem];
 }
