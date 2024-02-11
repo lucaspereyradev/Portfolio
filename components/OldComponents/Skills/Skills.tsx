@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import SectionHeading from '@/components/SectionHeading/SectionHeading'
+import SectionHeading from '@/components/OldComponents/SectionHeading/SectionHeading'
 import { skillsData } from '@/lib/data'
 import { useSectionInView } from '@/lib/hooks'
 import { motion, useAnimation } from 'framer-motion'

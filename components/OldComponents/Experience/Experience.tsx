@@ -1,11 +1,17 @@
 'use client'
 import React from 'react'
-import SectionHeading from '@/components/SectionHeading/SectionHeading'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+import dynamic from 'next/dynamic'
+import SectionHeading from '@/components/OldComponents/SectionHeading/SectionHeading'
 import 'react-vertical-timeline-component/style.min.css'
 import { experiencesData } from '@/lib/data'
 import { useSectionInView } from '@/lib/hooks'
 import { useTheme } from '@/context/ThemeContext'
+
+const VerticalTimeline = dynamic(() => import('react-vertical-timeline-component').then(module => module.VerticalTimeline), { ssr: false })
+
+const VerticalTimelineElement = dynamic(() => import('react-vertical-timeline-component').then(module => module.VerticalTimelineElement), {
+    ssr: false,
+})
 
 export default function Experience() {
     const { ref } = useSectionInView('Experience')
@@ -15,9 +21,10 @@ export default function Experience() {
         <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
             <SectionHeading>My experience</SectionHeading>
             <VerticalTimeline lineColor="rgba(0, 0, 0, 0.1)">
-                {experiencesData.map((item, index) => (
+                {experiencesData?.map((item, index) => (
                     <React.Fragment key={index}>
                         <VerticalTimelineElement
+                            visible
                             contentStyle={{
                                 background: theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
                                 boxShadow: 'none',
@@ -29,7 +36,7 @@ export default function Experience() {
                                 borderRight: theme === 'light' ? '0.4rem solid #9ca3af' : '0.4rem solid rgba(255, 255, 255, 0.5)',
                             }}
                             date={item.date}
-                            dateClassName='timelineDateStyle'
+                            dateClassName="timelineDateStyle"
                             icon={item.icon}
                             iconStyle={{
                                 background: theme === 'light' ? 'white' : 'rgba(255, 255, 255, 0.15)',

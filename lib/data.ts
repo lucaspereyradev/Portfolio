@@ -38,7 +38,7 @@ export const experiencesData = [
 	{
 		title: 'Frontend Developer',
 		location: 'CABA, Buenos Aires, AR',
-		description: "I'm now a Frontend developer. My stack includes React, Next.js, TypeScript, Sass, SEO.",
+		description: "I'm now a Frontend developer. My stack includes React, Next.js, TypeScript, Sass Modules, CSS Modules, Chart.js.",
 		icon: React.createElement(SiNextdotjs),
 		date: '2023 - Present',
 	},
@@ -81,12 +81,12 @@ export const projectsData = [
 
 export const skillsData = [
 	{
-		label: 'HTML',
-		icon: React.createElement(DiHtml5, { size: 56 }),
+		label: 'React.js',
+		icon: React.createElement(DiReact, { size: 56 }),
 	},
 	{
-		label: 'CSS',
-		icon: React.createElement(DiCss3, { size: 56 }),
+		label: 'Next.js',
+		icon: React.createElement(SiNextdotjs, { size: 56 }),
 	},
 	{
 		label: 'JavaScript',
@@ -97,12 +97,12 @@ export const skillsData = [
 		icon: React.createElement(BiLogoTypescript, { size: 56 }),
 	},
 	{
-		label: 'React.js',
-		icon: React.createElement(DiReact, { size: 56 }),
+		label: 'HTML',
+		icon: React.createElement(DiHtml5, { size: 56 }),
 	},
 	{
-		label: 'Next.js',
-		icon: React.createElement(SiNextdotjs, { size: 56 }),
+		label: 'CSS',
+		icon: React.createElement(DiCss3, { size: 56 }),
 	},
 	{
 		label: 'Node.js',

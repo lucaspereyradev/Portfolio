@@ -3,11 +3,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import ActiveSectionContextProvider from '@/context/ActiveSectionContext'
-import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer/Footer'
 import ThemeContextProvider from '@/context/ThemeContext'
-import ThemeSwitch from '@/components/ThemeSwitch/ThemeSwitch'
-// const Header = dynamic(() => import('@/components/Header/Header'))
+import Sidebar from '@/components/Sidebar/Sidebar'
+import Footer from '@/components/Footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,16 +17,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={`${inter.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
-                <div className="bg-emerald-200 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-green-300/50"></div>
-                <div className="bg-cyan-200 absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-sky-600/50"></div>
+            <body className={`${inter.className} min-h-full relative bg-[#f4f5f5] dark:bg-[#141414] sm:flex sm:overflow-y-scroll`}>
                 <ThemeContextProvider>
                     <ActiveSectionContextProvider>
-                        <Header />
-                        {children}
-                        <Footer />
+                        <Sidebar />
 
-                        <ThemeSwitch />
+                        <main className="main">
+                            <section className="container">
+                                {children}
+                                <Footer />
+                            </section>
+                        </main>
                     </ActiveSectionContextProvider>
                 </ThemeContextProvider>
             </body>
